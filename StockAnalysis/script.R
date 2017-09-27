@@ -1,9 +1,9 @@
-source("Helper.R")
+source("Environment.R")
 SetupEnvironment(requiredPackages = c("caret", "reshape", "data.table"))
 
 # read single file
 
-data <- read.csv("../../../Downloads/mstcgl/MBANK.mst", header = TRUE)
+data <- read.csv("../../../../Downloads/mstcgl/MBANK.mst", header = TRUE)
 
 # get data bulk
 # http://stackoverflow.com/a/11433532/3922292
@@ -38,4 +38,9 @@ validation <- data[-validation_index,]
 
 data <- data[validation_index,]
 
+# create model
+
 # make predictions
+
+
+# evaluate model
